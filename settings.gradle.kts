@@ -23,3 +23,5 @@ rootProject.name = "AndroidArchShop"
 include(":app")
 include(":hi-library")
 include(":hi-libaray-test")
+include(":hi-ui")
+include(":hi-ui-test")
