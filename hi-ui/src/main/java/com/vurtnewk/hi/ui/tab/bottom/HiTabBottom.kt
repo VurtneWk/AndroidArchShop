@@ -22,7 +22,7 @@ import com.vurtnewk.hi.ui.tab.common.IHiTab
 class HiTabBottom @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : RelativeLayout(context, attrs), IHiTab<HiTabBottomInfo<*>> {
-    private lateinit var tabInfo: HiTabBottomInfo<*>
+    lateinit var tabInfo: HiTabBottomInfo<*>
     private val tabImageView: ImageView
     private val tabIconView: TextView
     private val tabNameView: TextView
@@ -37,7 +37,7 @@ class HiTabBottom @JvmOverloads constructor(
 
     override fun setHiTabInfo(data: HiTabBottomInfo<*>) {
         tabInfo = data
-        inflateInfo(false, true)
+        inflateInfo(selected = false, init = true)
     }
 
     private fun inflateInfo(selected: Boolean, init: Boolean) {

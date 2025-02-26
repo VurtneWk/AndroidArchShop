@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.vurtnewk.hi_libaray_test"
+    namespace = "com.vurtnewk.hi_library_test"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.vurtnewk.hi_libaray_test"
+        applicationId = "com.vurtnewk.hi_library_test"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

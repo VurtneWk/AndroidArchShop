@@ -10,8 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/hi-libaray-test" />
             <option value="$PROJECT_DIR$/hi-library" />
+            <option value="$PROJECT_DIR$/hi-library-test" />
             <option value="$PROJECT_DIR$/hi-ui" />
             <option value="$PROJECT_DIR$/hi-ui-test" />
           </set>

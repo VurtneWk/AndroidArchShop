@@ -1,4 +1,4 @@
-package com.vurtnewk.hi_libaray_test
+package com.vurtnewk.hi_library_test
 
 import android.content.Context
 import android.content.Intent
@@ -12,7 +12,7 @@ import com.vurtnewk.hi.library.log.HiLogConfig
 import com.vurtnewk.hi.library.log.HiLogManager
 import com.vurtnewk.hi.library.log.HiLogType
 import com.vurtnewk.hi.library.log.printer.view.HiViewPrinter
-import com.vurtnewk.hi_libaray_test.databinding.ActivityHiLogDemoBinding
+import com.vurtnewk.hi_library_test.databinding.ActivityHiLogDemoBinding
 
 class HiLogDemoActivity : AppCompatActivity() {
 

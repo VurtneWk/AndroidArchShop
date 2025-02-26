@@ -1,4 +1,4 @@
-package com.vurtnewk.hi_libaray_test
+package com.vurtnewk.hi_library_test
 
 import org.junit.Test
 

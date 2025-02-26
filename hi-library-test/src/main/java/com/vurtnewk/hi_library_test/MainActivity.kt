@@ -1,11 +1,11 @@
-package com.vurtnewk.hi_libaray_test
+package com.vurtnewk.hi_library_test
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.vurtnewk.hi_libaray_test.databinding.ActivityMainBinding
+import com.vurtnewk.hi_library_test.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
