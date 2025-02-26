@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.vurtnewk.hi_ui_test.databinding.ActivityMainBinding
 import com.vurtnewk.hi_ui_test.tab.HiTabBottomDemoActivity
+import com.vurtnewk.hi_ui_test.tab.HiTabTopDemoActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         mActivityMainBinding.apply {
             btnToTabBottom.setOnClickListener { HiTabBottomDemoActivity.start(this@MainActivity) }
+            btnToTabTop.setOnClickListener { HiTabTopDemoActivity.start(this@MainActivity) }
         }
     }
 }

@@ -32,9 +32,9 @@ class HiTabBottomLayout @JvmOverloads constructor(
         private const val TAG_TAB_BOTTOM = "TAG_TAB_BOTTOM"
     }
 
-    val tabSelectedChangeListeners: MutableList<IHiTabLayout.OnTabSelectedListener<HiTabBottomInfo<*>>> =
-        mutableListOf()
-    var selectedInfo: HiTabBottomInfo<*>? = null
+    private val tabSelectedChangeListeners =
+        mutableListOf<IHiTabLayout.OnTabSelectedListener<HiTabBottomInfo<*>>>()
+    private var selectedInfo: HiTabBottomInfo<*>? = null
     var bottomAlpha = 1f
 
     //TabBottom高度
@@ -44,7 +44,7 @@ class HiTabBottomLayout @JvmOverloads constructor(
     private val bottomLineHeight = 0.5f
 
     //TabBottom的头部线条颜色
-    var bottomLineColor = "#dfe0e1"
+    var bottomLineColor = "#DFE0E1"
     private val infoList: MutableList<HiTabBottomInfo<*>> = mutableListOf()
 
 
