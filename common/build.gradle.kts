@@ -1,20 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.vurtnewk.arch"
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    namespace = "com.vurtnewk.arch.common"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.vurtnewk.arch"
-        minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -38,12 +35,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(project(":common"))
     implementation(project(":hi-ui"))
     implementation(project(":hi-library"))
+    implementation(libs.gson)
 }
