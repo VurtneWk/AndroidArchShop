@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidArchShop">
         <activity
+            android:name=".refresh.HiRefreshDemoActivity"
+            android:exported="false" />
+        <activity
             android:name=".tab.HiTabTopDemoActivity"
             android:exported="false" />
         <activity
