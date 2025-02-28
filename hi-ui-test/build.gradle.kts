@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+//    id("com.google.devtools.ksp")
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -45,4 +47,11 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(project(":hi-ui"))
     implementation(project(":hi-library"))
+
+    implementation(libs.glide)
+    ksp(libs.glide.ksp)
+
+    implementation(libs.gson)
+
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 }
